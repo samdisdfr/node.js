@@ -9,7 +9,13 @@ router.get("/productos",(req, res)=>{
          .then((data) => res.json(data) )
          .catch((error) =>res.json({mensaje:error}))
 });
-
+//getbyId
+router.get("/productos/:id", (req, res) => {
+    const {id} = req.params;
+    productosModel.findById(id)
+        .then((data) => res.json(data))
+        .catch((error) => res.json({mensaje:error}))
+});
 
 //exportar
 

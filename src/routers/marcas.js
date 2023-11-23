@@ -9,7 +9,13 @@ router.get("/marcas",(req, res)=>{
          .then((data) => res.json(data) )
          .catch((error) =>res.json({mensaje:error}))
 });
-
+//getbyId
+router.get("/marcas/:id", (req, res) => {
+    const {id} = req.params;
+    marcasModel.findById(id)
+        .then((data) => res.json(data))
+        .catch((error) => res.json({mensaje:error}))
+});
 
 //exportar
 

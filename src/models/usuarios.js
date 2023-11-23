@@ -25,14 +25,7 @@ const usuariosModel = mongoose.Schema({
     direccion:{
         type:String,
         require:true
-},
-
-    
-    carrito:{
-        type:Array,
-        require:true
-},
-
+}
 })
 
 module.exports = mongoose.model("usuarios",usuariosModel);
