@@ -15,7 +15,7 @@ router.post("/login",(req, res)=>{
         const login = loginModel(req.body);
         console.log(req.body)
         login.save()
-            .then((data) => res.json({mensaje:"acseso concebido"}))
+            .then((data) => res.json({mensaje:"acceso concedido"}))
             .catch((error) => res.json({mensaje:error}))
 });
 
