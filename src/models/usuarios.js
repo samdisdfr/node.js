@@ -1,11 +1,6 @@
 const mongoose = require("mongoose")
 
 const usuariosModel = mongoose.Schema({
-
-    _id:{
-        type:String,
-        require:true
-},
     
     nombre:{
         type:String,
