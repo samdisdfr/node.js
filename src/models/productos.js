@@ -38,7 +38,7 @@ const productosModel = mongoose.Schema({
 },
     
     imagenes:{
-        type:Array,
+        type:String,
         require:true
 },
 
